@@ -1,0 +1,27 @@
+classDiagram
+        Iphone <|-- musicplayer
+        Iphone <|-- calls
+        Iphone  <|-- browser
+        Iphone : 
+        Iphone : Main
+        Iphone: 
+        Iphone: Menu ()
+        class musicplayer {
+          Interface
+          void tocar ()
+         void pausar ()
+        void musiceled(String musica)
+
+        }
+        class calls {
+          Interface
+          void ligar (String numero)
+            void atender ()
+            void iniciarconversa()
+        }
+        class browser {
+          Interface
+          void exibirPagina(String url)
+            void adicionarNovaAba()
+            void atualizarPagina()
+        }
